@@ -1,27 +1,3 @@
-// let randomNumber = Math.floor(Math.random()*100)+1;
-
-
-// function checkGuess() {
-    
-//     const guess = Number(document.getElementById("guessInput").value);
-//     const result = document.getElementById("result");
-
-//     if(!guess){
-//         result.innerText = "Please enter the number!";
-//     }
-//     else if(guess < randomNumber) {
-//         result.innerText = "Go Up ⬆";
-//     } 
-//     else if(guess > randomNumber){
-//         result.innerText = "Go Down ⬇";
-//     }
-//     else {
-//         result.innerText = "Hurray 🎉! You Guessed it.";
-//         randomNumber = Math.floor(Math.random()*100)+1;
-//     }
-// }
-
-
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 const maxAttempts = 5;
@@ -50,13 +26,13 @@ function checkGuess() {
     else {
         feedback = "Correct 🎉";
         result.innerText = "Hurray 🎉! You guessed it!";
-        result.classList.add("correct");  // glow animation
+        result.classList.add("correct");   // glow animation
         addToTable(attempts, guess, feedback);
 
         setTimeout(() => {
             result.classList.remove("correct");
             startResetAnimation();
-        }, 1500);
+        }, 5000);
 
         return;
     }
