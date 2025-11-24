@@ -1,0 +1,193 @@
+/* Page styling */
+/* body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0d1321;
+  font-family: Arial, sans-serif;
+} */
+
+/* Game container */
+/* .container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.2);
+} */
+
+/* Heading */
+/* h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #00e5ff;
+} */
+
+/* Input box */
+/* #guessInput {
+  width: 180px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid rgba(0, 229, 255, 0.4);
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+} */
+
+/* #guessInput::placeholder {
+  color: #b9dfe6;
+} */
+
+/* Button */
+/* button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #0d1321;
+  background: #00e5ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+} */
+
+/* button:hover {
+  background: #00c7e0;
+  transform: scale(1.05);
+} */
+
+/* Result text */
+/* #result {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffe66d;
+} */
+
+/* Page styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1a002b;    /* Deep purple */
+  font-family: Arial, sans-serif;
+}
+
+/* Game container */
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #f3d4ff;   /* Soft lavender text */
+  border: 1px solid rgba(255, 0, 255, 0.2);
+  box-shadow: 0 0 35px rgba(255, 0, 255, 0.4);  /* Pink glow */
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ff6cff;   /* Neon pink */
+}
+
+/* Input box */
+#guessInput {
+  width: 180px;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid rgba(255, 116, 255, 0.5);
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffe6ff;
+  text-align: center;
+}
+
+#guessInput::placeholder {
+  color: #d7a6ff;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: #1a002b;
+  background: #ff6cff;      /* Neon pink button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff47ff;
+  transform: scale(1.05);
+}
+
+/* Result text */
+#result {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffbeff;
+}
+
+/* Attempts text */
+#attempts {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #e0a0ff;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: #f3d4ff;
+  font-size: 16px;
+}
+
+table th, table td {
+  border: 1px solid rgba(255, 116, 255, 0.3);
+  padding: 8px;
+}
+
+table th {
+  background: rgba(255, 0, 255, 0.2);
+}
+
+/* Correct guess animation */
+.correct {
+  animation: glow 1.2s ease-in-out;
+}
+
+@keyframes glow {
+  0% { color: #ffbeff; transform: scale(1); }
+  50% { color: #ff6cff; transform: scale(1.2); }
+  100% { color: #ffbeff; transform: scale(1); }
+}
+
+/* Fade effect when restarting */
+.fade {
+  animation: fadeOut 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
