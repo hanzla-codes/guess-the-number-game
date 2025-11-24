@@ -34,7 +34,7 @@ This is part of my **personal JavaScript skill-upgrading project**.
 ## 📂 Live Demo
 
 *🔗 GitHub Pages Link:*
-https://your-username.github.io/guess-the-number-game/
+[https://your-username.github.io/guess-the-number-game/](https://hanzla-codes.github.io/guess-the-number-game/)
 
 ---
 ## 📁 Project Structure
